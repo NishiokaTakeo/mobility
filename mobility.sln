@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mobility", "mobility\mobility.csproj", "{4F964400-7890-4852-8D90-3AC8F08FA479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mobilityTest", "mobilityTest\mobilityTest.csproj", "{F9521E43-E82C-484C-A6B8-FC28F500B96D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F964400-7890-4852-8D90-3AC8F08FA479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F964400-7890-4852-8D90-3AC8F08FA479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F964400-7890-4852-8D90-3AC8F08FA479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F964400-7890-4852-8D90-3AC8F08FA479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9521E43-E82C-484C-A6B8-FC28F500B96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9521E43-E82C-484C-A6B8-FC28F500B96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9521E43-E82C-484C-A6B8-FC28F500B96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9521E43-E82C-484C-A6B8-FC28F500B96D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE34C206-EDC3-4CB8-9058-143766AA5327}
+	EndGlobalSection
+EndGlobal
