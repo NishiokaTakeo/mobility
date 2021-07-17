@@ -9,7 +9,6 @@ namespace mobility.Controllers
     [TestFixture]
     public class Get 
     {
-        //private readonly ILogger<WeatherForecastController> _logger = new Logger<WeaWeatherForecastControllerther>();
         private  WeatherForecastController _weatherAPI;
         private  IWeatherAPI _api;
 

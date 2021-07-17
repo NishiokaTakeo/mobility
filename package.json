@@ -1,0 +1,8 @@
+{
+  "name": "mobility",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "dotnet run --project=mobility",
+    "test": "dotnet test --project=mobilityTest"
+  }
+}
