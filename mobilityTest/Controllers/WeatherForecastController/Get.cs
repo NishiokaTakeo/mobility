@@ -10,7 +10,6 @@ namespace mobility.Controllers
     public class Get 
     {
         private  WeatherForecastController _weatherAPI;
-        private  IWeatherAPI _api;
 
         [SetUp]
         public void Setup()
