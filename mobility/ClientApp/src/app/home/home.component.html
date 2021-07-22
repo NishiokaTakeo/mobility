@@ -2,18 +2,38 @@
 <p>This component demonstrates fetching data from the server.</p>
 
 <p>Please type city name in below input field then click Submit button.</p>
-City Name: <input type="text" [(ngModel)]="cityname"/>
+City Name: <input type="text" [(ngModel)]="cityname" (keyup)="searchWeatherBykeyp($event)"/>
 <button class="btn btn-primary" (click)="searchWeather()">Submit</button>
 
 <hr/>
-<div *ngIf="curweather && curweather.cod == 200">
+<div class="main">
+  <div class="left">
+	<div *ngIf="hasData()">  
+	  <p class="weather-main">Weather is <strong>{{curweather.weather[0].main}}</strong></p>
+	  <p class="weather-cloudiness">Cloudiness is <strong>{{curweather.clouds.all}}%</strong></p>
+	</div>
+
+	<div *ngIf="cityNotFound()" class="notfound">
+	  <p>Sorry, Not found!<br /> 
+		It might not registared City Name. <br /> 
+		Please type it Perth or magor city name.<br /> 
+	</p>
+	</div>
+  </div>
   
-  <p class="weather-main">Weather is <strong>{{curweather.weather[0].main}}</strong></p>
-  <p class="weather-cloudiness">Cloudiness is <strong>{{curweather.clouds.all}}%</strong></p>
-</div>
+  <div class="right">
 
-<div *ngIf="curweather.cod != 200" class="notfound">
-  <p>Sorry, Not found!<br /> It might not registared City Name. Please type it Perth or magor city name.</p>
-</div>
+	<b>Search History (Research by Double click )</b>
+	<ul>
+		<li *ngFor="let item of history;">
+			<label (dblclick)="reSearch(item)" >{{item}}</label>
+		</li>
+	</ul>
+	<div *ngIf="history.length == 0"  class="notfound">
+		There is no search History!
+	</div>
 
+  </div>
+
+</div>
 
